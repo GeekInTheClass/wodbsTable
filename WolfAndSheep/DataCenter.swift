@@ -8,35 +8,11 @@
 
 import Foundation
 
-enum WorkState {
-    
-    
-    
-    case Todo
-    
-    case Upcoming
-    
-    case Failed
-    
-    case Done
-    
-    case Retry
-    
-    case Succ_Retry
-    
-    case Sin
-    
-}
-
-
-
-
-
 
 
 //할 일
 
-struct Work : Hashable {
+struct Work : {
     
     
     
@@ -48,7 +24,7 @@ struct Work : Hashable {
     
     var will : String?
     
-    var state : WorkState
+
     
     
     
@@ -59,8 +35,7 @@ struct Work : Hashable {
         self.title = title
         
         self.body = body
-        
-        self.state = WorkState.Todo
+
         
     }
     
@@ -98,14 +73,6 @@ struct Work : Hashable {
         
     }
     
-    
-    
-    mutating func reviseState(state : WorkState){
-        
-        
-        
-        self.state = state
-        
         
         
     }
@@ -114,131 +81,6 @@ struct Work : Hashable {
     
 }
 
-
-
-
-
-struct MyTodoSet {
-    
-    var upcomingSet : Set<Work> = Set<Work>()
-    
-    var todoSet : Set<Work> = Set<Work>()
-    
-    var retrySet : Set<Work> = Set<Work>()
-    
-    
-    
-    mutating func addTodo(newWork : Work) {
-        
-        
-        
-        todoSet.insert(newWork)
-        
-        
-        
-    }
-    
-    
-    
-    mutating func addRetry(newWork : Work) {
-        
-        
-        
-        retrySet.insert(newWork)
-        
-        
-        
-    }
-    
-    
-    
-    mutating func removeFromTodo(doneWork : Work){
-        
-        
-        
-        todoSet.remove(doneWork)
-        
-        
-        
-    }
-    
-    
-    
-    mutating func removeFromRetry(doneWork : Work){
-        
-        
-        
-        retrySet.remove(doneWork)
-        
-        
-        
-    }
-    
-    
-    
-}
-
-
-
-struct MyDoneSet {
-    
-    
-    
-    var doneSet : Set<Work> = Set<Work>()
-    
-    var resuccSet : Set<Work> = Set<Work>()
-    
-    
-    
-    mutating func addDone(newWork : Work) {
-        
-        
-        
-        doneSet.insert(newWork)
-        
-        
-        
-    }
-    
-    
-    
-    mutating func addResucc(newWork : Work) {
-        
-        
-        
-        resuccSet.insert(newWork)
-        
-        
-        
-    }
-    
-    
-    
-    mutating func removeFromDone(doneWork : Work){
-        
-        
-        
-        doneSet.remove(doneWork)
-        
-        
-        
-    }
-    
-    
-    
-    mutating func removeFromResucc(doneWork : Work){
-        
-        
-        
-        resuccSet.remove(doneWork)
-        
-        
-        
-    }
-    
-    
-    
-}
 
 
 var toDolist : [Work] =
@@ -255,5 +97,3 @@ var toDolist : [Work] =
     Work(time: Date(timeIntervalSinceNow: 60*60*24*10), title: "소프트웨어 스튜디오 과제", body: "어플리케이션 만들기")
     ]
 
-var myTodoSet = MyTodoSet()
-var myDoneSet = MyDoneSet()
