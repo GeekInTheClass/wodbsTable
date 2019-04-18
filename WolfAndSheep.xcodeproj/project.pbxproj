@@ -13,7 +13,6 @@
 		48F0F06A22685F3A00BBF308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F0F06922685F3A00BBF308 /* Assets.xcassets */; };
 		48F0F06D22685F3A00BBF308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F0F06B22685F3A00BBF308 /* LaunchScreen.storyboard */; };
 		48F0F07522685F6D00BBF308 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F0F07422685F6D00BBF308 /* DataCenter.swift */; };
-		48F0F0772268662100BBF308 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F0F0762268662100BBF308 /* DataCenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		48F0F06C22685F3A00BBF308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48F0F06E22685F3A00BBF308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48F0F07422685F6D00BBF308 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
-		48F0F0762268662100BBF308 /* DataCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataCenter.swift; path = ../../../../swiftExamples/DataCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 				48F0F06422685F3800BBF308 /* ViewController.swift */,
 				48F0F06622685F3800BBF308 /* Main.storyboard */,
 				48F0F07422685F6D00BBF308 /* DataCenter.swift */,
-				48F0F0762268662100BBF308 /* DataCenter.swift */,
 				48F0F06922685F3A00BBF308 /* Assets.xcassets */,
 				48F0F06B22685F3A00BBF308 /* LaunchScreen.storyboard */,
 				48F0F06E22685F3A00BBF308 /* Info.plist */,
@@ -143,7 +140,6 @@
 			files = (
 				48F0F07522685F6D00BBF308 /* DataCenter.swift in Sources */,
 				48F0F06522685F3800BBF308 /* ViewController.swift in Sources */,
-				48F0F0772268662100BBF308 /* DataCenter.swift in Sources */,
 				48F0F06322685F3800BBF308 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

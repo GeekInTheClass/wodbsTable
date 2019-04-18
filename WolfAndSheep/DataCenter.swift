@@ -241,7 +241,8 @@ struct MyDoneSet {
 }
 
 
-var toDolist : [Work] = [
+var toDolist : [Work] =
+    [
     Work(time: Date(timeIntervalSinceNow: 60*60*24), title: "친구들이랑 점심약속", body: "승현, 서현이랑 만나기로함" ),
     Work(time: Date(timeIntervalSinceNow: 60*60*24*2), title: "소프트웨어 스튜디오 중간고사", body: "재밌다"),
     Work(time: Date(timeIntervalSinceNow: 60*60*24*3), title: "어벤저스보기" , body: "왕십리 CGV에서"),
@@ -251,7 +252,8 @@ var toDolist : [Work] = [
     Work(time: Date(timeIntervalSinceNow: 60*60*24*7), title: "운영체제론 휴강", body: "희망사항"),
     Work(time: Date(timeIntervalSinceNow: 60*60*24*8), title: "컴퓨터 구조론 과제", body: "project1"),
     Work(time: Date(timeIntervalSinceNow: 60*60*24*9), title: "테크노 경영학 과제", body: "사업계획서"),
-    Work(time: Date(timeIntervalSinceNow: 60*60*24*10), title: "소프트웨어 스튜디오 과제", body: "어플리케이션 만들기")]
+    Work(time: Date(timeIntervalSinceNow: 60*60*24*10), title: "소프트웨어 스튜디오 과제", body: "어플리케이션 만들기")
+    ]
 
 var myTodoSet = MyTodoSet()
 var myDoneSet = MyDoneSet()
