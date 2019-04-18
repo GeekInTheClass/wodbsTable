@@ -12,9 +12,7 @@ import Foundation
 
 //할 일
 
-struct Work : {
-    
-    
+struct Work {
     
     var due_Time : Date
     
@@ -77,9 +75,7 @@ struct Work : {
         
     }
     
-    
-    
-}
+
 
 
 
